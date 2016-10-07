@@ -54,13 +54,13 @@ function loadProjectsList() {
                             {
                                 _type: "li"
                                 , children: [
-                                {_type: "a", class: "page-scroll", href: "#about", innerHTML: "Nuestra historia"}
+                                {_type: "a", class: "page-scroll", href: "#services", innerHTML: "Información"}
                             ]
                             },
                             {
                                 _type: "li"
                                 , children: [
-                                {_type: "a", class: "page-scroll", href: "#services", innerHTML: "Información"}
+                                {_type: "a", class: "page-scroll", href: "#about", innerHTML: "Nuestra historia"}
                             ]
                             },
                             {
