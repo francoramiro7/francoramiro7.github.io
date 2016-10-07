@@ -18,7 +18,7 @@ function main() {
 function loadProjectsList() {
     document.title = "Leb - Pillows & Blankets";
     document.body.appendChild(eFD({
-        _type: "nav", class: "navbar navbar-default" ,role:"navigation"
+        _type: "nav", class: "navbar navbar-default"
         , children: [
             {
                     _type: "div", class: "navbar-header"
@@ -657,9 +657,9 @@ function loadProjectsList() {
     document.body.appendChild(eFD({
         _type:"script", src:"js/jquery.easing.min.js"
     }));
-    document.body.appendChild(eFD({
-        _type:"script", src:"js/scrolling-nav.js"
-    }));
+    // document.body.appendChild(eFD({
+    //     _type:"script", src:"js/scrolling-nav.js"
+    // }));
 
 
 
