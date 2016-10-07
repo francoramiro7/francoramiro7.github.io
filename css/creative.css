@@ -1,8 +1,3 @@
-/*!
- * Start Bootstrap - Creative v3.3.7+1 (http://startbootstrap.com/template-overviews/creative)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
 html,
 body {
   height: 100%;
@@ -74,8 +69,8 @@ aside {
   font-size: 80px;
   font-family: "Taken by Vultures Demo";
   font-weight: 700;
-  margin-left: 40px;
-  margin-top: 32px;
+  /*margin-left: 40px;*/
+  /*margin-top: 32px;*/
 }
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
@@ -131,6 +126,12 @@ aside {
     font-size: 80px;
     color: rgba(73, 158, 155, 0.7);
   }
+
+  #logoImg{
+      height: 10%;
+      width: 10%;
+  }
+
   .navbar-default .navbar-header .navbar-brand:hover,
   .navbar-default .navbar-header .navbar-brand:focus {
     color: #499e9b;

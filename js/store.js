@@ -1,28 +1,26 @@
 // Load website
 function main() {
 	var query = getQuery();
-	switch (query.length) {
-	case 0: // Load package list
-		loadProjectsList(query);
-		break;
-
-	default: // There's a package ID in the url
-		updateProjectUI(query);
-		break;
-
-	}
+	// switch (query.length) {
+	// case 0:
+	// 	loadProjectsList(query);
+	// 	break;
+    //
+	// default:
+	// 	updateProjectUI(query);
+	// 	break;
+    //
+	// }
+    loadProjectsList()
 }
 
 // Load Projects List UI
 function loadProjectsList() {
     document.title = "Leb - Pillows & Blankets";
     document.body.appendChild(eFD({
-        _type: "nav", class: "navbar navbar-default"
+        _type: "nav", class: "navbar navbar-default" ,role:"navigation"
         , children: [
             {
-                _type: "div", class: "container-fluid"
-                , children: [
-                {
                     _type: "div", class: "navbar-header"
                     , children: [
                     {
@@ -38,9 +36,10 @@ function loadProjectsList() {
                             , {_type: "span", class: "icon-bar"}, {_type: "span", class: "icon-bar"}
                             , {_type: "span", class: "icon-bar"}
                         ]
-                    }, {_type: "a", class: "navbar-brand", href: "#", innerHTML: "Leb"}
-                ]
-                }, {
+                    },
+                    {_type:"img",id:"logoImg" , class: "navbar-brand", href: "#", src:"img/leb.png"}
+
+                , {
                     _type: "div", class: "collapse navbar-collapse", id: "bs-example-navbar-collapse-1", children: [
                         {
                             _type: "ul", class: "nav navbar-nav navbar-right"
@@ -75,14 +74,11 @@ function loadProjectsList() {
                                 {
                                     _type: "a",
                                     href: "#",
-                                    class: "dropdown-toggle",
-                                    'data-toggle': "dropdown",
-                                    role: "button",
-                                    'aria-haspopup': "true",
-                                    'aria-expanded': "false",
-                                    innerHTML: "Productos"
+                                    class:"dropdown-toggle",
+                                    'data-toggle':"dropdown",
+                                    innerHTML:"Productos"
                                     ,
-                                    children: [{_type: "span", class: "caret"}]
+                                    children: [{_type: "b", class: "caret"}]
                                 }, {
                                     _type: "ul", class: "dropdown-menu"
                                     , children: [
@@ -795,9 +791,6 @@ function updateProjectUI(userInfo) {
 	var project = userInfo["project"];
 	var products = userInfo["products"];
 
-	var client = getMobileOperatingSystem();
-	var clientIsIos = client === "iOS";
-	var clientIsDroid = client === "Android";
 
 	// Object.prototype.forEachKey = function (f) {
 	// 	var obj = this;
@@ -809,7 +802,7 @@ function updateProjectUI(userInfo) {
 
 	// products.forEachKey(function(key, val) {
 	// 	var item = val;
-	document.body.appendChild(eFD({ _type:"h2", innerHTML:project }));
+	// document.body.appendChild(eFD({ _type:"h2", innerHTML:project }));
 	// var list = eFD({ _type:"ul"});
     //
 	// Object.keys(products).forEach(function(key, index) {

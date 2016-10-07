@@ -1,4 +1,3 @@
-//probably my greatest js achievement
 function getQuery() {
 	var url = window.location.href;
 	var Q = {};
