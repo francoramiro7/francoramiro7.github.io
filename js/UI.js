@@ -67,43 +67,49 @@ function loadProjectsList() {
                                 , children: [
                                 {_type: "a", class: "page-scroll", href: "#contact", innerHTML: "Contacto"}
                             ]
-                            },
-                            {
-                                _type: "li", class: "dropdown"
-                                , children: [
-                                {
-                                    _type: "a",
-                                    href: "#",
-                                    class:"dropdown-toggle",
-                                    'data-toggle':"dropdown",
-                                    innerHTML:"Productos"
-                                    ,
-                                    children: [{_type: "b", class: "caret"}]
-                                }, {
-                                    _type: "ul", class: "dropdown-menu"
-                                    , children: [
-                                        {
-                                            _type: "li"
-                                            , children: [
-                                            {_type: "a", href: "#", innerHTML: "Almuhadones"}
-                                        ]
-                                        },
-                                        {
-                                            _type: "li"
-                                            , children: [
-                                            {_type: "a", href: "#", innerHTML: "Mantas"}
-                                        ]
-                                        },
-                                        {
-                                            _type: "li"
-                                            , children: [
-                                            {_type: "a", href: "#", innerHTML: "Cabezales"}
-                                        ]
-                                        }
-                                    ]
-                                }
-                            ]
                             }
+                            // ,
+                            // {
+                            //     _type: "li", class: "dropdown"
+                            //     , children: [
+                            //     {
+                            //     //     _type: "div", class: "dropdown",
+                            //     //     children: [
+                            //     //
+                            //     // {
+                            //         _type: "p",
+                            //         class: "dropdown-toggle",
+                            //         'data-toggle': "dropdown",
+                            //         innerHTML: "Productos"
+                            //         ,
+                            //         children: [{_type: "span", class: "caret"}]
+                            //     }, {
+                            //         _type: "ul", class: "dropdown-menu"
+                            //         , children: [
+                            //             {
+                            //                 _type: "li"
+                            //                 , children: [
+                            //                 {_type: "a", href: "#", innerHTML: "Almuhadones"}
+                            //             ]
+                            //             },
+                            //             {
+                            //                 _type: "li"
+                            //                 , children: [
+                            //                 {_type: "a", href: "#", innerHTML: "Mantas"}
+                            //             ]
+                            //             },
+                            //             {
+                            //                 _type: "li"
+                            //                 , children: [
+                            //                 {_type: "a", href: "#", innerHTML: "Cabezales"}
+                            //             ]
+                            //             }
+                            //         ]
+                            //     }
+                            // // ]
+                            // // }
+                            // ]
+                            // }
                         ]
                         }
                     ]
@@ -657,9 +663,9 @@ function loadProjectsList() {
     document.body.appendChild(eFD({
         _type:"script", src:"js/jquery.easing.min.js"
     }));
-    // document.body.appendChild(eFD({
-    //     _type:"script", src:"js/scrolling-nav.js"
-    // }));
+    document.body.appendChild(eFD({
+        _type:"script", src:"js/scrolling-nav.js"
+    }));
 
 
 

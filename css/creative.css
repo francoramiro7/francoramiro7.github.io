@@ -100,8 +100,18 @@ aside {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 16px;
-  color: #222222;
+  color: #499e9b;
 }
+.navbar-default .nav > li > p,
+.navbar-default .nav > li > p:focus {
+    padding: 60px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    color: #499e9b;
+}
+
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus:hover {
   color: #499e9b;
@@ -113,6 +123,19 @@ aside {
 }
 .navbar-default .nav > li.active > a:hover,
 .navbar-default .nav > li.active > a:focus:hover {
+  background-color: transparent;
+}
+.navbar-default .nav > li > p:hover,
+.navbar-default .nav > li > p:focus:hover {
+  color: #499e9b;
+}
+.navbar-default .nav > li.active > p,
+.navbar-default .nav > li.active > p:focus {
+  color: #499e9b !important;
+  background-color: transparent;
+}
+.navbar-default .nav > li.active > p:hover,
+.navbar-default .nav > li.active > p:focus:hover {
   background-color: transparent;
 }
 @media (min-width: 768px) {
@@ -151,6 +174,14 @@ aside {
   .navbar-default .nav > li > a:focus:hover {
     color: #499e9b;
   }
+    .navbar-default .nav > li > p,
+    .navbar-default .nav > li > p:focus {
+        color: rgba(73, 158, 155, 0.7);
+    }
+    .navbar-default .nav > li > p:hover,
+    .navbar-default .nav > li > p:focus:hover {
+        color: #499e9b;
+    }
   .navbar-default.affix {
     background-color: white;
     border-color: rgba(34, 34, 34, 0.05);
@@ -184,6 +215,15 @@ aside {
   .navbar-default.affix .nav > li > a:focus:hover {
     color: #499e9b;
   }
+
+    .navbar-default.affix .nav > li > p,
+     .navbar-default.affix .nav > li > p:focus {
+         color: #222222;
+     }
+    .navbar-default.affix .nav > li > p:hover,
+    .navbar-default.affix .nav > li > p:focus:hover {
+        color: #499e9b;
+    }
 }
 header {
   position: relative;
