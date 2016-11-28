@@ -543,7 +543,7 @@ function loadProjectsList() {
                          children:[
                              { _type:"img", style:"max-width:150px;max-height:150px", src:"img/logo-white.png"},
                              { _type:"hr", class:"light"},
-                             { _type:"p", class:"text-faded", innerHTML:"Todo surgío de una idea chica, casi por casualidad, me mudé, y para decorar mi casa quería almuadones facheros, como no encontré decicí hacer los mios"},
+                             { _type:"p", class:"text-faded", innerHTML:"Todo surgío de una idea chica, casi por casualidad, me mudé, y para decorar mi casa quería almohadones facheros, como no encontré decicí hacer los mios"},
                              { _type:"a", href:"#services", class:"page-scroll btn btn-default btn-xl sr-button",innerHTML:"Miralos!"}
                          ]
                          }
